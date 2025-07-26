@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <title>Gelişmiş Arama</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+         <meta charset="utf-8">
+    </head>
+    <body>
+        <header class="sayfa-tepesi">
+            <a href="index.html">Google Arama</a>
+        </header>
+
+        <div class="gelismis-ana-baslik">
+            <span>Gelişmiş Arama</span>
+        </div>
+        <div class="bolucu-cizgi"></div>
+
+        <main class="form-cercevesi">
+            <p class="form-talimati">Şu ölçütlere uyan sayfaları bul:</p>
+            <form action="https://www.google.com/search">
+                
+                <div class="girdi-satiri">
+                    <label for="as_q" class="girdi-etiketi">içerdiği tüm kelimeler:</label>
+                    <div class="girdi-alani">
+                        <input type="text" name="as_q" id="as_q" class="gelismis-input">
+                    </div>
+                </div>
+
+                <div class="girdi-satiri">
+                    <label for="as_epq" class="girdi-etiketi">tam olarak bu kelime veya kelime öbeği:</label>
+                    <div class="girdi-alani">
+                        <input type="text" name="as_epq" id="as_epq" class="gelismis-input">
+                    </div>
+                </div>
+
+                <div class="girdi-satiri">
+                    <label for="as_oq" class="girdi-etiketi">içerdiği kelimelerden herhangi biri:</label>
+                    <div class="girdi-alani">
+                        <input type="text" name="as_oq" id="as_oq" class="gelismis-input">
+                    </div>
+                </div>
+
+                <div class="girdi-satiri">
+                    <label for="as_eq" class="girdi-etiketi">içermediği kelimeler:</label>
+                    <div class="girdi-alani">
+                        <input type="text" name="as_eq" id="as_eq" class="gelismis-input">
+                    </div>
+                </div>
+
+                <div class="buton-konumu">
+                    <input type="submit" value="Gelişmiş Arama" class="gelismis-buton">
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,164 @@
+/* === GENEL STİLLER === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; 
+}
+
+/* === SAYFA TEPESİ (HEADER) === */
+.sayfa-tepesi {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    align-items: center;
+}
+.sayfa-tepesi a {
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 13px;
+}
+.sayfa-tepesi a:hover {
+    text-decoration: underline;
+}
+
+
+.ana-icerik {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+}
+.logo-alani {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    margin-bottom: 25px;
+    min-height: 92px; 
+}
+.logo-alani img {
+    max-width: 272px; 
+}
+.logo-yazisi {
+    color: rgb(66, 133, 244); 
+    font-size: 16px;
+    margin-left: 8px; 
+    margin-bottom: 10px; 
+}
+.arama-kutusu-konteyniri {
+    text-align: center;
+}
+.arama-cubugu {
+    width: 550px;
+    border-radius: 30px;
+    border: 1px solid rgb(223, 225, 229);
+    padding: 12px 22px;
+    font-size: 16px;
+    max-width: 90%; 
+}
+.arama-cubugu:focus {
+    box-shadow: 0 1px 6px rgba(32,33,36, 0.28);
+    outline: none;
+}
+.buton-alani {
+    text-align: center;
+    margin-top: 25px;
+}
+.arama-butonu {
+    background-color: rgb(248, 249, 250);
+    border: 1px solid rgb(242, 242, 242);
+    border-radius: 5px;
+    color: rgb(95, 99, 104);
+    font-size: 14px;
+    margin: 10px 5px;
+    padding: 10px 18px;
+    cursor: pointer;
+}
+.arama-butonu:hover {
+    box-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+    border: 1px solid rgb(221, 221, 221);
+}
+
+
+.gelismis-ana-baslik { 
+    font-size: 20px;
+    margin: 25px 35px;
+}
+.bolucu-cizgi {
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+.form-cercevesi {
+    padding: 20px 40px;
+    max-width: 1140px; 
+    margin: 0 auto;
+}
+.form-talimati {
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+}
+.girdi-satiri {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; 
+}
+.girdi-etiketi {
+    width: 200px;
+    font-size: 13px;
+    color: rgb(34, 34, 34);
+    padding-right: 10px;
+}
+.girdi-alani {
+    flex-grow: 1;
+    min-width: 200px;
+}
+.gelismis-input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid rgb(217, 217, 217);
+    border-top: 1px solid rgb(192, 192, 192);
+    font-size: 13px;
+    box-sizing: border-box; 
+}
+.buton-konumu {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px;
+}
+.gelismis-buton {
+    background-color: #4d90fe; 
+    color: white;
+    border: 1px solid #3079ed;
+    border-radius: 2px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+}
+.gelismis-buton:hover {
+    background-color: #357ae8;
+    border-color: #2f5bb7;
+}
+
+
+@media (max-width: 600px) {
+    .arama-cubugu {
+        width: 90%;
+    }
+    .girdi-satiri {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .girdi-etiketi {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .girdi-alani {
+        width: 100%;
+    }
+    .buton-konumu {
+        justify-content: flex-start;
+    }
+}
